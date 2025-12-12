@@ -6,6 +6,7 @@
     <title>Gyan Mela 2025 - New Horizon Public School</title>
     <!-- Load Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <!-- Use Inter font -->
     <style>
         body {
@@ -21,14 +22,18 @@
 <body class="antialiased">
 
     <!-- Header & Hero Section -->
-    <header class="bg-nhps-blue text-white shadow-lg sticky top-0 z-10">
+    <header class="bg-nhps-blue text-white shadow-lg sticky top-0 z-50">
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-extrabold tracking-tight">NHPS Gyan Mela 2025</h1>
             <nav class="hidden md:block">
                 <a href="#project-robot" class="mx-3 hover:text-yellow-300 transition duration-300 font-semibold">Featured Project</a>
-                <a href="#overview" class="mx-3 hover:text-yellow-300 transition duration-300">Overview</a>
+                <a href="#overview" class="mx-3 hover:text-yellow-300 transition duration-300">Overview & Impact</a>
                 <a href="#gallery" class="mx-3 hover:text-yellow-300 transition duration-300">Gallery</a>
-                <a href="#contact" class="ml-4 px-4 py-2 bg-[#FFC72C] text-nhps-blue font-semibold rounded-full hover:bg-yellow-400 transition duration-300">Visit Now!</a>
+                
+                <!-- UPDATED: Visit Now Link pointing to Google Maps Directions -->
+                <a href="https://www.google.com/maps/dir//New+Horizon+Public+School,+100+Feet+Rd,+Indiranagar,+Bengaluru" target="_blank" class="ml-4 px-4 py-2 bg-[#FFC72C] text-nhps-blue font-semibold rounded-full hover:bg-yellow-400 transition duration-300 shadow-md">
+                    Visit Now <i class="fa-solid fa-location-arrow ml-1"></i>
+                </a>
             </nav>
         </div>
     </header>
@@ -71,7 +76,7 @@
                     </a>
                 </div>
 
-                <!-- Image Placeholder (using the futuristic robot hand as inspiration) -->
+                <!-- Image Placeholder -->
                 <div class="lg:w-1/2 relative w-full h-80 lg:h-96">
                     <img class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl" 
                          src="https://placehold.co/800x600/005A9C/FFFFFF?text=Gyan+Mela+Innovation" 
@@ -116,7 +121,6 @@
                         <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
                             <h4 class="font-bold text-2xl mb-4 text-gray-900">How It Works: The Logic Flow</h4>
                             <div class="space-y-4">
-                                <!-- Steps adapted from the table in image_007b5a.png -->
                                 <div class="flex items-start">
                                     <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
                                     <div>
@@ -153,54 +157,22 @@
                             <h4 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h4>
                             <ul class="space-y-3 text-lg">
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
                                     Arduino Uno (The Brain)
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
                                     4 Wheels & 4 Motors (Movement)
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
                                     Lithium Battery Holders & 3.7V Batteries
                                 </li>
                                 <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
-                                    Foamboard (Chassis)
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
-                                    Breadboard & Jumper Wires (Circuitry)
+                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                    Foamboard (Chassis) & Breadboard
                                 </li>
                             </ul>
-                        </div>
-                    </div>
-
-                    <!-- Future Applications -->
-                    <div class="pt-6">
-                        <h4 class="text-3xl font-bold text-center text-gray-900 mb-8">Future Benefits & Applications</h4>
-                        <div class="grid md:grid-cols-4 gap-6">
-                            
-                            <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-nhps-blue">
-                                <h5 class="font-bold text-xl text-nhps-blue mb-2">1. Logistics & Manufacturing</h5>
-                                <p class="text-sm text-gray-600">Automating movement of goods (AGVs) in factories to deliver parts, eliminating waiting time and maximizing efficiency.</p>
-                            </div>
-                            
-                            <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-nhps-blue">
-                                <h5 class="font-bold text-xl text-nhps-blue mb-2">2. Hospitals & Healthcare</h5>
-                                <p class="text-sm text-gray-600">Automating sensitive internal delivery jobs, like moving biohazardous materials, increasing hygiene and safety.</p>
-                            </div>
-                            
-                            <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-nhps-blue">
-                                <h5 class="font-bold text-xl text-nhps-blue mb-2">3. Agriculture & Farming</h5>
-                                <p class="text-sm text-gray-600">Autonomous planters following GPS paths to ensure perfect seed depth and spacing, increasing crop yield and reducing waste.</p>
-                            </div>
-                            
-                            <div class="p-6 bg-white rounded-xl shadow-md border-b-4 border-nhps-blue">
-                                <h5 class="font-bold text-xl text-nhps-blue mb-2">4. Safety & Inspection</h5>
-                                <p class="text-sm text-gray-600">Robots patrolling high-radiation or toxic areas in chemical plants to check equipment and look for leaks, protecting human workers.</p>
-                            </div>
-
                         </div>
                     </div>
                 </div>
@@ -208,36 +180,81 @@
         </section>
 
 
-        <!-- Event Overview Section (General Gyan Mela Info) -->
+        <!-- UPDATED: Event Overview Section with "Future Benefits" Explanation -->
         <section id="overview" class="py-16 bg-white">
             <div class="container mx-auto px-6">
-                <h3 class="text-4xl font-bold text-center text-gray-900 mb-12">Gyan Mela 2025: Event Overview</h3>
+                <h3 class="text-4xl font-bold text-center text-gray-900 mb-6">Gyan Mela 2025: Event Overview</h3>
                 
-                <div class="max-w-5xl mx-auto space-y-6 text-lg text-gray-700 mb-10">
-                    <p>The Gyan Mela (Fair of Knowledge) is the annual event where New Horizon Public School students showcase their practical projects. Every student participates, demonstrating core concepts across all subjects—from advanced Physics to complex Mathematics.</p>
-                    <p class="font-semibold text-nhps-blue">It is a foundational exercise in practical application, critical thinking, and communication, transforming students into expert presenters.</p>
+                <div class="max-w-4xl mx-auto text-center mb-12">
+                     <p class="text-lg text-gray-700">The Gyan Mela is more than just a fair; it's a glimpse into the future. Our student projects are designed to solve real-world problems. Below are the four key areas of impact demonstrated by this year's innovations.</p>
                 </div>
                 
-                <div class="max-w-5xl mx-auto grid md:grid-cols-2 gap-10">
+                <!-- The 4 Benefits Grid -->
+                <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     
-                    <!-- Day 1: Student Focus -->
-                    <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300">
-                        <div class="text-3xl font-extrabold mb-4 border-b border-white/30 pb-3">Day 1: Internal Review & Preparation</div>
-                        <ul class="list-disc list-inside text-gray-100 space-y-2 text-lg">
-                            <li>Internal review of all projects by faculty and staff.</li>
-                            <li>Final practice presentations among student teams.</li>
-                            <li>Preparation of displays for high visitor volume on Day 2.</li>
-                        </ul>
+                    <!-- 1. Logistics -->
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 border-nhps-blue group">
+                        <div class="h-40 bg-blue-100 flex items-center justify-center overflow-hidden relative">
+                             <!-- Abstract/Icon representation -->
+                             <img src="https://placehold.co/400x300/e0f2fe/0369a1?text=Logistics" class="object-cover w-full h-full opacity-90 group-hover:scale-110 transition duration-500" alt="Logistics Icon">
+                             <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-16 h-16 text-nhps-blue" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M13 10V3L4 14h7v7l9-11h-7z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl text-nhps-blue mb-3">Transforming Logistics</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                <strong>Achieve maximum efficiency</strong> by automating the movement of goods. Like future car factories, AGVs will follow floor lines to deliver parts to exact assembly stations instantly, eliminating waiting time.
+                            </p>
+                        </div>
                     </div>
 
-                    <!-- Day 2: Parent & Community Focus -->
-                    <div class="p-8 bg-[#FFC72C] text-nhps-blue rounded-xl shadow-2xl transform hover:scale-[1.02] transition duration-300">
-                        <div class="text-3xl font-extrabold mb-4 border-b border-nhps-blue/30 pb-3">Day 2: Parent & Public Showcase</div>
-                        <ul class="list-disc list-inside space-y-2 text-lg">
-                            <li>**Open Invitation** to parents and the community.</li>
-                            <li>Visitors interact directly with student presenters.</li>
-                            <li>Celebration of knowledge and practical learning achievements.</li>
-                        </ul>
+                    <!-- 2. Healthcare -->
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 border-[#FFC72C] group">
+                        <div class="h-40 bg-yellow-100 flex items-center justify-center overflow-hidden relative">
+                             <img src="https://placehold.co/400x300/fef3c7/b45309?text=Healthcare" class="object-cover w-full h-full opacity-90 group-hover:scale-110 transition duration-500" alt="Healthcare Icon">
+                             <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-16 h-16 text-yellow-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl text-yellow-700 mb-3">Hospitals & Healthcare</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                <strong>Increase hygiene and safety</strong> by automating sensitive delivery jobs. Robots can move biohazardous materials (like used syringes) to disposal zones, keeping human staff safe from exposure.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 3. Agriculture -->
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 border-green-600 group">
+                        <div class="h-40 bg-green-100 flex items-center justify-center overflow-hidden relative">
+                             <img src="https://placehold.co/400x300/dcfce7/15803d?text=Agriculture" class="object-cover w-full h-full opacity-90 group-hover:scale-110 transition duration-500" alt="Agriculture Icon">
+                             <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-16 h-16 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h1.064M15 20.488V18a2 2 0 012-2h3.064M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl text-green-700 mb-3">Agriculture & Farming</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                <strong>Reduce waste & increase yield</strong>. High-tech farms can use autonomous planters that follow GPS paths to ensure every seed is planted at the perfect depth and spacing for maximum production.
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- 4. Safety -->
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 border-red-600 group">
+                        <div class="h-40 bg-red-100 flex items-center justify-center overflow-hidden relative">
+                             <img src="https://placehold.co/400x300/fee2e2/b91c1c?text=Safety" class="object-cover w-full h-full opacity-90 group-hover:scale-110 transition duration-500" alt="Safety Icon">
+                             <div class="absolute inset-0 flex items-center justify-center">
+                                <svg class="w-16 h-16 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z"></path></svg>
+                             </div>
+                        </div>
+                        <div class="p-6">
+                            <h4 class="font-bold text-xl text-red-700 mb-3">Safety & Inspection</h4>
+                            <p class="text-gray-600 text-sm leading-relaxed">
+                                <strong>Monitor dangerous areas</strong> safely. Robots can patrol chemical plants with toxic fumes or radiation to check for leaks, ensuring that human workers never have to risk exposure.
+                            </p>
+                        </div>
                     </div>
 
                 </div>
@@ -254,16 +271,16 @@
                 <h3 class="text-4xl font-bold text-center text-gray-900 mb-12">A Glimpse of Past Innovation</h3>
                 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Image 1 (Now the Line Following Robot) -->
+                    <!-- Image 1 -->
                     <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
                         <img class="w-full h-48 object-cover" 
-                             src="https://placehold.co/600x400/0073B7/FFFFFF?text=Robotic+Arm" 
+                             src="https://placehold.co/600x400/0073B7/FFFFFF?text=Line+Following+Robot" 
                              alt="Student presenting a science model"
                              onerror="this.onerror=null;this.src='https://placehold.co/600x400/0073B7/FFFFFF?text=Project+1';"
                         >
                         <div class="p-4 bg-white">
-                            <p class="text-lg font-semibold text-nhps-blue">Robotic arm (ATL)</p>
-                            <p class="text-sm text-gray-600">Grade 9</p>
+                            <p class="text-lg font-semibold text-nhps-blue">Line Following Robot (ATL)</p>
+                            <p class="text-sm text-gray-600">Team Maggelan, Kavinesh, Parikshet, Paarthav</p>
                         </div>
                     </div>
                     
