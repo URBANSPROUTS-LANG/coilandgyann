@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,7 @@
             font-family: 'Inter', sans-serif;
             background-color: #f7f7f7;
         }
+        /* Custom NHPS Brand Colors */
         .text-nhps-blue { color: #005A9C; }
         .bg-nhps-blue { background-color: #005A9C; }
         .border-nhps-yellow { border-color: #FFC72C; }
@@ -26,11 +28,10 @@
         <div class="container mx-auto px-6 py-4 flex justify-between items-center">
             <h1 class="text-3xl font-extrabold tracking-tight">NHPS Gyan Mela 2025</h1>
             <nav class="hidden md:block">
-                <a href="#project-robot" class="mx-3 hover:text-yellow-300 transition duration-300 font-semibold">Featured Project</a>
+                <a href="#featured-projects" class="mx-3 hover:text-yellow-300 transition duration-300 font-semibold">Featured Projects</a>
                 <a href="#overview" class="mx-3 hover:text-yellow-300 transition duration-300">Overview & Impact</a>
-                <a href="#gallery" class="mx-3 hover:text-yellow-300 transition duration-300">Gallery</a>
                 
-                <!-- UPDATED: Visit Now Link pointing to Google Maps Directions -->
+                <!-- Visit Now Link pointing to Google Maps Directions -->
                 <a href="https://www.google.com/maps/dir//New+Horizon+Public+School,+100+Feet+Rd,+Indiranagar,+Bengaluru" target="_blank" class="ml-4 px-4 py-2 bg-[#FFC72C] text-nhps-blue font-semibold rounded-full hover:bg-yellow-400 transition duration-300 shadow-md">
                     Visit Now <i class="fa-solid fa-location-arrow ml-1"></i>
                 </a>
@@ -50,7 +51,7 @@
                         Witness the Power of Practical Knowledge
                     </h2>
                     <p class="mt-4 text-xl text-gray-600">
-                        The Gyan Mela is New Horizon Public School’s flagship event, showcasing how students transform classroom theory into **breathtaking, demonstrable projects**. Explore our featured ATL project below!
+                        The Gyan Mela is New Horizon Public School’s flagship event, showcasing how students transform classroom theory into **breathtaking, demonstrable projects**. Explore our featured ATL projects below!
                     </p>
                     
                     <!-- Key Info Badges -->
@@ -60,7 +61,7 @@
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-[#005A9C] mr-2" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
                             </svg>
-                            Two Days of Discovery
+                            Dec 19-20, 2025
                         </div>
                         <div class="flex items-center text-lg font-medium text-gray-800">
                             <!-- User Icon -->
@@ -71,16 +72,17 @@
                         </div>
                     </div>
 
-                    <a href="#project-robot" class="mt-8 inline-flex items-center px-8 py-3 border border-transparent text-lg font-bold rounded-full shadow-lg text-nhps-blue bg-[#FFC72C] hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
-                        Explore Featured Project
+                    <!-- Updated link to new section ID -->
+                    <a href="#featured-projects" class="mt-8 inline-flex items-center px-8 py-3 border border-transparent text-lg font-bold rounded-full shadow-lg text-nhps-blue bg-[#FFC72C] hover:bg-yellow-400 transition duration-300 transform hover:scale-105">
+                        Explore Featured Projects
                     </a>
                 </div>
 
                 <!-- Image Placeholder -->
                 <div class="lg:w-1/2 relative w-full h-80 lg:h-96">
                     <img class="absolute inset-0 w-full h-full object-cover rounded-xl shadow-2xl" 
-                         src="https://placehold.co/800x600/005A9C/FFFFFF?text=Gyan+Mela+Innovation" 
-                         alt="Gyan Mela students presenting projects"
+                         src="https://placehold.co/800x600/FFC72C/005A9C?text=ATL+Students+Innovating" 
+                         alt="Students working on robotics in the ATL Lab"
                          onerror="this.onerror=null;this.src='https://placehold.co/800x600/005A9C/FFFFFF?text=ATL+Innovation';"
                     >
                     <div class="absolute inset-0 bg-gradient-to-tr from-nhps-blue/50 to-transparent rounded-xl"></div>
@@ -88,99 +90,459 @@
             </div>
         </section>
 
-        <!-- Featured Project Section: Line Following Robot -->
-        <section id="project-robot" class="py-16 bg-gray-50">
+        <!-- Featured Projects Section -->
+        <section id="featured-projects" class="py-16 bg-gray-50">
             <div class="container mx-auto px-6">
-                <h3 class="text-4xl font-extrabold text-center text-gray-900 mb-4">Featured Project: Line Following Robot</h3>
-                <p class="text-xl text-center text-nhps-blue font-semibold mb-12">By: Maggelan, Kavinesh, Parikshet, Paarthav (ATL Gyan Mela)</p>
+                <h3 class="text-4xl font-extrabold text-center text-gray-900 mb-4">Featured Innovations Showcase</h3>
+                <p class="text-xl text-center text-nhps-blue font-semibold mb-12">Dive deep into the six most impactful projects developed by our ATL Student Teams for Gyan Mela 2025.</p>
                 
-                <div class="max-w-6xl mx-auto space-y-12">
+                <div class="max-w-6xl mx-auto space-y-24">
                     
-                    <!-- Project Overview & Image -->
-                    <div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
-                        <div class="lg:w-1/2 mb-6 lg:mb-0 lg:ml-10">
-                            <h4 class="text-3xl font-bold text-nhps-blue mb-4">About the Robot</h4>
-                            <p class="text-lg text-gray-700 leading-relaxed">
-                                A Line Following Robot is an autonomous mobile machine designed to detect and follow a path, typically a visible line (like a black line on a white surface) drawn on the floor. It's a fundamental concept in robotics, often used for educational purposes and simple industrial applications.
-                            </p>
-                        </div>
-                        <div class="lg:w-1/2 w-full">
-                            <!-- Placeholder image representing the robot -->
-                            <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
-                                 src="https://placehold.co/800x500/FFC72C/005A9C?text=Line+Following+Robot+Model" 
-                                 alt="Image of the Line Following Robot hardware"
-                                 onerror="this.onerror=null;this.src='https://placehold.co/800x500/FFC72C/005A9C?text=Robot+Hardware';"
-                            >
-                        </div>
-                    </div>
-
-                    <!-- Materials and Steps -->
-                    <div class="grid md:grid-cols-2 gap-10">
+                    <!-- PROJECT 1: Line Following Robot -->
+                    <div class="space-y-12 pt-8 border-t border-gray-300">
+                        <h4 class="text-3xl font-bold text-nhps-blue mb-4 text-center">1. Line Following Robot</h4>
                         
-                        <!-- Explanation of Steps -->
-                        <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
-                            <h4 class="font-bold text-2xl mb-4 text-gray-900">How It Works: The Logic Flow</h4>
-                            <div class="space-y-4">
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
-                                    <div>
-                                        <p class="font-semibold text-lg text-nhps-blue">START & Look</p>
-                                        <p class="text-sm text-gray-600">Turns on, gets ready, and uses its sensors to check where the line is right now.</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
-                                    <div>
-                                        <p class="font-semibold text-lg text-nhps-blue">Decision Point</p>
-                                        <p class="text-sm text-gray-600">Checks if the line is exactly in the middle compared to its body using eyes (sensors).</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
-                                    <div>
-                                        <p class="font-semibold text-lg text-nhps-blue">Steering Action</p>
-                                        <p class="text-sm text-gray-600">If on line: **Go Straight**. If line is left/right: **Turn Left/Right** to move back over the path.</p>
-                                    </div>
-                                </div>
-                                <div class="flex items-start">
-                                    <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">4</div>
-                                    <div>
-                                        <p class="font-semibold text-lg text-nhps-blue">Re-check & End</p>
-                                        <p class="text-sm text-gray-600">Stops and wiggles if the line is lost. Checks again after every move. Stops when the finish line is reached.</p>
-                                    </div>
-                                </div>
+                        <div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                            <div class="lg:w-1/2 mb-6 lg:mb-0 lg:ml-10">
+                                <h5 class="text-2xl font-bold text-nhps-blue mb-4">About the Robot</h5>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    A Line Following Robot is an autonomous mobile machine designed to detect and follow a path, typically a visible line (like a black line on a white surface) drawn on the floor. It's a fundamental concept in robotics, often used for educational purposes and simple industrial applications.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
+                                    src="https://placehold.co/800x500/FFC72C/005A9C?text=Line+Following+Robot" 
+                                    alt="Image of the Line Following Robot hardware"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/FFC72C/005A9C?text=Robot+Hardware';"
+                                >
                             </div>
                         </div>
 
-                        <!-- Materials List -->
-                        <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
-                            <h4 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h4>
-                            <ul class="space-y-3 text-lg">
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
-                                    Arduino Uno (The Brain)
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
-                                    4 Wheels & 4 Motors (Movement)
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
-                                    Lithium Battery Holders & 3.7V Batteries
-                                </li>
-                                <li class="flex items-center">
-                                    <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
-                                    Foamboard (Chassis) & Breadboard
-                                </li>
-                            </ul>
+                        <div class="grid md:grid-cols-2 gap-10">
+                            <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
+                                <h5 class="font-bold text-2xl mb-4 text-gray-900">How It Works: The Logic Flow</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">START & Look</p>
+                                            <p class="text-sm text-gray-600">Turns on, gets ready, and uses its sensors to check where the line is right now.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Decision Point</p>
+                                            <p class="text-sm text-gray-600">Checks if the line is exactly in the middle compared to its body using eyes (sensors).</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Steering Action</p>
+                                            <p class="text-sm text-gray-600">If on line: **Go Straight**. If line is left/right: **Turn Left/Right** to move back over the path.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">4</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Re-check & End</p>
+                                            <p class="text-sm text-gray-600">Stops and wiggles if the line is lost. Checks again after every move. Stops when the finish line is reached.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
+                                <h5 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h5>
+                                <ul class="space-y-3 text-lg">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Arduino Uno (The Brain)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        4 Wheels & 4 Motors (Movement)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Lithium Battery Holders & 3.7V Batteries
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Foamboard (Chassis) & Breadboard
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- PROJECT 2: Automatic Pet Feeder -->
+                    <div class="space-y-12 pt-8 border-t border-gray-300">
+                        <h4 class="text-3xl font-bold text-nhps-blue mb-4 text-center">2. Automatic Pet Feeder</h4>
+                        
+                        <div class="flex flex-col lg:flex-row items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                            <div class="lg:w-1/2 mb-6 lg:mb-0 lg:pr-10">
+                                <h5 class="text-2xl font-bold text-nhps-blue mb-4">About the Pet Feeder</h5>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    This smart device automates feeding times for pets, ensuring they receive the correct portion of food at scheduled intervals. It uses a programmable microcontroller and a servo mechanism to dispense the food, offering peace of mind to busy pet owners.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
+                                    src="https://placehold.co/800x500/0073B7/FFFFFF?text=Automatic+Pet+Feeder" 
+                                    alt="Image of the Automatic Pet Feeder"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/0073B7/FFFFFF?text=Pet+Feeder+Model';"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-10">
+                            <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
+                                <h5 class="font-bold text-2xl mb-4 text-gray-900">Key Features & Logic</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Time Scheduling</p>
+                                            <p class="text-sm text-gray-600">Uses a Real-Time Clock (RTC) module to maintain precise feeding schedules, even if power is lost.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Portion Control</p>
+                                            <p class="text-sm text-gray-600">A servo motor drives a dispensing mechanism for accurate, repeatable food portion sizes.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Manual Override</p>
+                                            <p class="text-sm text-gray-600">Includes a push-button for immediate, manual feeding outside of the programmed schedule.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
+                                <h5 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h5>
+                                <ul class="space-y-3 text-lg">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Microcontroller (e.g., Arduino Nano)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Servo Motor (Dispensing)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Real-Time Clock (RTC) Module
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Container and Chute Mechanism
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- PROJECT 3: Bluetooth Controlled Car -->
+                    <div class="space-y-12 pt-8 border-t border-gray-300">
+                        <h4 class="text-3xl font-bold text-nhps-blue mb-4 text-center">3. Bluetooth Controlled Car</h4>
+                        
+                        <div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                            <div class="lg:w-1/2 mb-6 lg:mb-0 lg:ml-10">
+                                <h5 class="text-2xl font-bold text-nhps-blue mb-4">About the Car</h5>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    This remote-controlled vehicle is managed entirely via a smartphone application communicating over a Bluetooth signal. It demonstrates fundamental concepts of wireless communication, motor control, and user interface design.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
+                                    src="https://placehold.co/800x500/FFC72C/005A9C?text=Bluetooth+RC+Car" 
+                                    alt="Image of the Bluetooth Controlled Car"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/FFC72C/005A9C?text=RC+Car+Model';"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-10">
+                            <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
+                                <h5 class="font-bold text-2xl mb-4 text-gray-900">Key Features & Logic</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Wireless Control</p>
+                                            <p class="text-sm text-gray-600">Uses an HC-05/06 Bluetooth module to receive directional commands from the user's phone.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Motor Driver</p>
+                                            <p class="text-sm text-gray-600">An L298N motor shield translates the microcontroller's low-power signals into high-power movement commands.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Control Interface</p>
+                                            <p class="text-sm text-gray-600">A custom-built Android application serves as the intuitive remote control joystick.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
+                                <h5 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h5>
+                                <ul class="space-y-3 text-lg">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Arduino Uno/Nano
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        HC-05/HC-06 Bluetooth Module
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        L298N Motor Driver Shield
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        DC Gear Motors and Wheels
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 4: Obstacle Avoiding Robot -->
+                    <div class="space-y-12 pt-8 border-t border-gray-300">
+                        <h4 class="text-3xl font-bold text-nhps-blue mb-4 text-center">4. Obstacle Avoiding Robot</h4>
+                        
+                        <div class="flex flex-col lg:flex-row items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                            <div class="lg:w-1/2 mb-6 lg:mb-0 lg:pr-10">
+                                <h5 class="text-2xl font-bold text-nhps-blue mb-4">About the Robot</h5>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    This robot is designed to navigate an environment autonomously without hitting objects. It uses ultrasonic sensors to measure distances to surrounding surfaces, demonstrating the core principles of sensor fusion and reactive navigation essential for autonomous vehicles.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
+                                    src="https://placehold.co/800x500/0073B7/FFFFFF?text=Obstacle+Avoidance+Robot" 
+                                    alt="Image of the Obstacle Avoiding Robot"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/0073B7/FFFFFF?text=Autonomous+Robot';"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-10">
+                            <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
+                                <h5 class="font-bold text-2xl mb-4 text-gray-900">Key Features & Logic</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Distance Sensing</p>
+                                            <p class="text-sm text-gray-600">HC-SR04 Ultrasonic Sensors emit sound pulses and measure the time of flight to determine object distance.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Decision Making</p>
+                                            <p class="text-sm text-gray-600">If the sensor detects an object within a predefined safe distance, the robot halts.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Evasive Action</p>
+                                            <p class="text-sm text-gray-600">The robot pivots, rescans the environment, and selects the path with the greatest distance, then continues moving.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
+                                <h5 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h5>
+                                <ul class="space-y-3 text-lg">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Arduino Microcontroller
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        HC-SR04 Ultrasonic Sensor(s)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Motor Driver and DC Motors
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Robot Chassis and Power Supply
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 5: Smart Irrigation System -->
+                    <div class="space-y-12 pt-8 border-t border-gray-300">
+                        <h4 class="text-3xl font-bold text-nhps-blue mb-4 text-center">5. Smart Irrigation System</h4>
+                        
+                        <div class="flex flex-col lg:flex-row-reverse items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                            <div class="lg:w-1/2 mb-6 lg:mb-0 lg:ml-10">
+                                <h5 class="text-2xl font-bold text-nhps-blue mb-4">About the System</h5>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    This automated system conserves water and optimizes plant health by only watering when the soil moisture drops below a threshold. It eliminates manual guesswork and is a perfect example of IoT applied to sustainable agriculture.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
+                                    src="https://placehold.co/800x500/FFC72C/005A9C?text=Smart+Irrigation+System" 
+                                    alt="Image of the Smart Irrigation System components"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/FFC72C/005A9C?text=Soil+Moisture+Sensing';"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-10">
+                            <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
+                                <h5 class="font-bold text-2xl mb-4 text-gray-900">Key Features & Logic</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Moisture Detection</p>
+                                            <p class="text-sm text-gray-600">A capacitive soil moisture sensor provides continuous, accurate readings of the soil's water content.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Automated Pumping</p>
+                                            <p class="text-sm text-gray-600">If moisture is low, the microcontroller activates a relay, turning on the water pump.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Water Conservation</p>
+                                            <p class="text-sm text-gray-600">The pump stops precisely when the target moisture level is reached, preventing overwatering and waste.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
+                                <h5 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h5>
+                                <ul class="space-y-3 text-lg">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Microcontroller (e.g., ESP32/Arduino)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Capacitive Soil Moisture Sensor
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        5V Relay Module
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Mini Submersible Water Pump
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- PROJECT 6: Automatic Grass Cutter -->
+                    <div class="space-y-12 pt-8 border-t border-gray-300">
+                        <h4 class="text-3xl font-bold text-nhps-blue mb-4 text-center">6. Automatic Grass Cutter</h4>
+                        
+                        <div class="flex flex-col lg:flex-row items-center bg-white p-6 md:p-10 rounded-xl shadow-2xl">
+                            <div class="lg:w-1/2 mb-6 lg:mb-0 lg:pr-10">
+                                <h5 class="text-2xl font-bold text-nhps-blue mb-4">About the Robot</h5>
+                                <p class="text-lg text-gray-700 leading-relaxed">
+                                    This autonomous robot is designed to maintain lawns without human intervention. Equipped with a high-speed rotating blade and a mobility system, it traverses the garden area, cutting grass evenly while potentially avoiding large obstacles. It demonstrates the application of robotics in everyday chores.
+                                </p>
+                            </div>
+                            <div class="lg:w-1/2 w-full">
+                                <img class="w-full h-72 object-cover rounded-lg border-4 border-[#FFC72C]" 
+                                    src="https://placehold.co/800x500/0073B7/FFFFFF?text=Automatic+Grass+Cutter" 
+                                    alt="Image of the Automatic Grass Cutter"
+                                    onerror="this.onerror=null;this.src='https://placehold.co/800x500/0073B7/FFFFFF?text=Grass+Cutter+Bot';"
+                                >
+                            </div>
+                        </div>
+
+                        <div class="grid md:grid-cols-2 gap-10">
+                            <div class="p-8 bg-white rounded-xl shadow-lg border-t-4 border-nhps-blue">
+                                <h5 class="font-bold text-2xl mb-4 text-gray-900">Key Features & Logic</h5>
+                                <div class="space-y-4">
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">1</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Mobility System</p>
+                                            <p class="text-sm text-gray-600">Driven by DC geared motors that provide high torque to move the chassis across uneven grassy terrain.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">2</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Cutting Mechanism</p>
+                                            <p class="text-sm text-gray-600">A dedicated high-RPM DC motor spins a cutting blade or wire at high speeds to slice through grass effectively.</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex items-start">
+                                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-[#FFC72C] text-nhps-blue font-bold flex items-center justify-center mr-3">3</div>
+                                        <div>
+                                            <p class="font-semibold text-lg text-nhps-blue">Safety & Power</p>
+                                            <p class="text-sm text-gray-600">Ideally powered by a rechargeable battery (or solar panel), ensuring cordless operation for full lawn coverage.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="p-8 bg-nhps-blue text-white rounded-xl shadow-lg">
+                                <h5 class="font-bold text-2xl mb-4 border-b border-white/30 pb-2">Key Materials Used</h5>
+                                <ul class="space-y-3 text-lg">
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        High RPM DC Motor (Cutter)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        DC Geared Motors (Wheels)
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        12V Rechargeable Battery
+                                    </li>
+                                    <li class="flex items-center">
+                                        <svg class="w-5 h-5 mr-2 text-[#FFC72C]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.001 12.001 0 0012 21a12.001 12.001 0 008.618-18.016z"></path></svg>
+                                        Chassis & Cutting Blade/Wire
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    
                 </div>
             </div>
         </section>
 
 
-        <!-- UPDATED: Event Overview Section with "Future Benefits" Explanation -->
+        <!-- Event Overview Section with "Future Benefits" Explanation -->
         <section id="overview" class="py-16 bg-white">
             <div class="container mx-auto px-6">
                 <h3 class="text-4xl font-bold text-center text-gray-900 mb-6">Gyan Mela 2025: Event Overview</h3>
@@ -193,7 +555,7 @@
                 <div class="max-w-6xl mx-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                     
                     <!-- 1. Logistics -->
-                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 border-nhps-blue group">
+                    <div class="bg-gray-50 rounded-xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 border-b-4 border-blue-600 group">
                         <div class="h-40 bg-blue-100 flex items-center justify-center overflow-hidden relative">
                              <!-- Abstract/Icon representation -->
                              <img src="https://placehold.co/400x300/e0f2fe/0369a1?text=Logistics" class="object-cover w-full h-full opacity-90 group-hover:scale-110 transition duration-500" alt="Logistics Icon">
@@ -260,55 +622,7 @@
                 </div>
                 
                 <div class="text-center mt-12">
-                    <p class="text-xl font-semibold text-gray-800">Date Announcement: February 2025 (Exact Dates TBD)</p>
-                </div>
-            </div>
-        </section>
-        
-        <!-- Gallery Placeholder -->
-        <section id="gallery" class="py-16 bg-gray-100">
-            <div class="container mx-auto px-6">
-                <h3 class="text-4xl font-bold text-center text-gray-900 mb-12">A Glimpse of Past Innovation</h3>
-                
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                    <!-- Image 1 -->
-                    <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                        <img class="w-full h-48 object-cover" 
-                             src="https://placehold.co/600x400/0073B7/FFFFFF?text=Line+Following+Robot" 
-                             alt="Student presenting a science model"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/0073B7/FFFFFF?text=Project+1';"
-                        >
-                        <div class="p-4 bg-white">
-                            <p class="text-lg font-semibold text-nhps-blue">Line Following Robot (ATL)</p>
-                            <p class="text-sm text-gray-600">Team Maggelan, Kavinesh, Parikshet, Paarthav</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Image 2 -->
-                    <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                        <img class="w-full h-48 object-cover" 
-                             src="https://placehold.co/600x400/FFC72C/005A9C?text=Math+Exhibit" 
-                             alt="Math exhibition with geometry figures"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/FFC72C/005A9C?text=Project+2';"
-                        >
-                        <div class="p-4 bg-white">
-                            <p class="text-lg font-semibold text-nhps-blue">Golden Ratio in Nature (Math)</p>
-                            <p class="text-sm text-gray-600">Grade 6</p>
-                        </div>
-                    </div>
-                    
-                    <!-- Image 3 -->
-                    <div class="rounded-xl overflow-hidden shadow-xl hover:shadow-2xl transition duration-300 transform hover:-translate-y-1">
-                        <img class="w-full h-48 object-cover" 
-                             src="https://placehold.co/600x400/005A9C/FFFFFF?text=History+Display" 
-                             alt="History project on ancient civilization"
-                             onerror="this.onerror=null;this.src='https://placehold.co/600x400/005A9C/FFFFFF?text=Project+3';"
-                        >
-                        <div class="p-4 bg-white">
-                            <p class="text-lg font-semibold text-nhps-blue">The Indus Valley Grid (History)</p>
-                            <p class="text-sm text-gray-600">Grade 7</p>
-                        </div>
-                    </div>
+                    <p class="text-xl font-semibold text-gray-800">Date Announcement: 19th & 20th December 2025</p>
                 </div>
             </div>
         </section>
